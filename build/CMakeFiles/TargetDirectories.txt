@@ -1,0 +1,3 @@
+/home/haozhaoyang/workspace/ucas/parallel/build/CMakeFiles/tsmm.dir
+/home/haozhaoyang/workspace/ucas/parallel/build/CMakeFiles/edit_cache.dir
+/home/haozhaoyang/workspace/ucas/parallel/build/CMakeFiles/rebuild_cache.dir
