@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -march=native -pg CMakeFiles/tsmm.dir/tsmm.cpp.o -o tsmm 
