@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/haozhaoyang/workspace/ucas/parallel/./include
 
-CXX_FLAGS = -O3 -march=native -std=c++17
+CXX_FLAGS = -O3 -march=native -pg -std=c++17
 

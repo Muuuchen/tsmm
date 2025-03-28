@@ -52,6 +52,9 @@ public:
     std::cout << "M: " << M << ", N: " << N << ", K: " << K << std::endl;
     std::cout << "\033[32m----------------------------------------\033[0m" << std::endl;
   }
+  void set_name(std::string str){
+    name=str; 
+  }
 
   void set_dim(int m, int n, int k) {
     M = m;
