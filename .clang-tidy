@@ -1,0 +1,27 @@
+---
+Checks: >
+    -*,
+    abseil-*,
+    bugprone-*,
+    cert-*,
+    clang-analyzer-*,
+    cppcoreguidelines-*,
+    google-*,
+    hicpp-*,
+    modernize-*,
+    performance-*,
+    portability-*,
+    readability-*,
+    
+# 格式检查
+CheckOptions:
+  - key:   readability-braces-around-statements.ShortStatementLines
+    value: 1
+  - key:   readability-magic-numbers.IgnoredNumbers
+    value: '0,1,2,3,4,8,16,32,64,128,256,512,1024'
+  
+# 现代C++特性
+WarningsAsErrors: '*'
+HeaderFilterRegex: '.*'
+FormatStyle:     file  # 使用项目中的.clang-format文件
+...
