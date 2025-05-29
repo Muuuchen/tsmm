@@ -69,10 +69,10 @@ target_include_directories(tsmm
         ${MKL_INCLUDE_DIRS}
 )
 
-target_include_directories(bench_blas
-    PUBLIC
-        ${MKL_INCLUDE_DIRS}
-)
+# target_include_directories(bench_blas
+#     PUBLIC
+#         ${MKL_INCLUDE_DIRS}
+# )
 target_include_directories(tsmm_opt
     PUBLIC
         $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
