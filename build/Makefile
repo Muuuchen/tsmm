@@ -187,6 +187,19 @@ bench_blas/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench_blas.dir/build.make CMakeFiles/bench_blas.dir/build
 .PHONY : bench_blas/fast
 
+#=============================================================================
+# Target rules for targets named tsmm_opt
+
+# Build rule for target.
+tsmm_opt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tsmm_opt
+.PHONY : tsmm_opt
+
+# fast build rule for target.
+tsmm_opt/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsmm_opt.dir/build.make CMakeFiles/tsmm_opt.dir/build
+.PHONY : tsmm_opt/fast
+
 src/bench.o: src/bench.cpp.o
 .PHONY : src/bench.o
 
@@ -235,6 +248,30 @@ src/tsmm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsmm.dir/build.make CMakeFiles/tsmm.dir/src/tsmm.cpp.s
 .PHONY : src/tsmm.cpp.s
 
+src/tsmm_opt.o: src/tsmm_opt.cpp.o
+.PHONY : src/tsmm_opt.o
+
+# target to build an object file
+src/tsmm_opt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsmm_opt.dir/build.make CMakeFiles/tsmm_opt.dir/src/tsmm_opt.cpp.o
+.PHONY : src/tsmm_opt.cpp.o
+
+src/tsmm_opt.i: src/tsmm_opt.cpp.i
+.PHONY : src/tsmm_opt.i
+
+# target to preprocess a source file
+src/tsmm_opt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsmm_opt.dir/build.make CMakeFiles/tsmm_opt.dir/src/tsmm_opt.cpp.i
+.PHONY : src/tsmm_opt.cpp.i
+
+src/tsmm_opt.s: src/tsmm_opt.cpp.s
+.PHONY : src/tsmm_opt.s
+
+# target to generate assembly for a file
+src/tsmm_opt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsmm_opt.dir/build.make CMakeFiles/tsmm_opt.dir/src/tsmm_opt.cpp.s
+.PHONY : src/tsmm_opt.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,12 +286,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... bench_blas"
 	@echo "... tsmm"
+	@echo "... tsmm_opt"
 	@echo "... src/bench.o"
 	@echo "... src/bench.i"
 	@echo "... src/bench.s"
 	@echo "... src/tsmm.o"
 	@echo "... src/tsmm.i"
 	@echo "... src/tsmm.s"
+	@echo "... src/tsmm_opt.o"
+	@echo "... src/tsmm_opt.i"
+	@echo "... src/tsmm_opt.s"
 .PHONY : help
 
 

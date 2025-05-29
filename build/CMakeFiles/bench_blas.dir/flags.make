@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS =  -Wall -Wextra -Wpedantic -O3 -std=c++17 -fopenmp
+CXX_FLAGS =  -Wall -Wextra -Wpedantic -O3 -g -std=c++17 -fopenmp
 

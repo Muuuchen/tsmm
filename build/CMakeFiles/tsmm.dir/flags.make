@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/root/workspace/tsmm/include
 
-CXX_FLAGS =  -Wall -Wextra -Wpedantic -O3 -std=c++17 -O3 -g -march=native -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -fopenmp
+CXX_FLAGS =  -Wall -Wextra -Wpedantic -O3 -g -std=c++17 -O3 -g -march=native -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -fopenmp
 

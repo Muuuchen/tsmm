@@ -57,7 +57,11 @@ target_sources(bench_blas
   PRIVATE
     src/bench.cpp  
 )
-
+add_executable(tsmm_opt)
+target_sources(tsmm_opt
+  PRIVATE
+    src/tsmm_opt.cpp  
+)
 
 target_include_directories(tsmm
     PUBLIC
@@ -69,15 +73,24 @@ target_include_directories(bench_blas
     PUBLIC
         ${MKL_INCLUDE_DIRS}
 )
-
-target_compile_options(tsmm
+target_include_directories(tsmm_opt
+    PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
+)
+target_compile_options(tsmm 
+  PRIVATE
+    -O3
+    -g
+    -march=native
+    $<$<BOOL:${TSMM_ENABLE_AVX512}>:-mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl >
+)
+target_compile_options(tsmm_opt
   PRIVATE
     -O3
     -g
     -march=native
     $<$<BOOL:${TSMM_ENABLE_AVX512}>:-mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl>
 )
-
 if(OpenMP_CXX_FOUND)
     target_link_libraries(tsmm PUBLIC OpenMP::OpenMP_CXX)
     target_link_libraries(bench_blas PUBLIC OpenMP::OpenMP_CXX)

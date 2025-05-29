@@ -55,4 +55,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/tsmm.dir/DependInfo.cmake"
   "CMakeFiles/bench_blas.dir/DependInfo.cmake"
+  "CMakeFiles/tsmm_opt.dir/DependInfo.cmake"
   )
