@@ -68,8 +68,11 @@ In theory we want mR=nR
 
 ## reference 
 https://github.com/flame/how-to-optimize-gemm/wiki#the-gotoblasblis-approach-to-optimizing-matrix-matrix-multiplication---step-by-step
+<<<<<<< HEAD
 https://salykova.github.io/matmul-cpu
 
+=======
+>>>>>>> 231da001c34e7faea8b90b2bd409620c1ec0f9ec
 
 ## cache 
 Model name:             Intel(R) Xeon(R) Gold 6430R CPU @ 2.80GHz
@@ -80,6 +83,7 @@ Caches (sum of all):
   L2:                     128 MiB (64 instances)
   L3:                     120 MiB (2 instances)
 
+<<<<<<< HEAD
   
 ## Block Mr Nr 
 
@@ -299,3 +303,6 @@ void mydgemm_cpu_v8(int M, int N, int K, double alpha, double *A, int LDA, doubl
 ![alt text](image.png)
 ![alt text](image-2.png)
 ![alt text](image-1.png)
+=======
+  
+>>>>>>> 231da001c34e7faea8b90b2bd409620c1ec0f9ec

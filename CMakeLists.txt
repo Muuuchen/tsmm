@@ -9,6 +9,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+<<<<<<< HEAD
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic -O3")
 option(TSMM_ENABLE_AVX512 "Enable AVX512 instructions" ON)
@@ -46,18 +47,28 @@ if(MKL_FOUND)
 else()
     message(FATAL_ERROR "MKL not found. Please install MKL or check your environment.")
 endif()
+=======
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic -mkl -O3")
+option(TSMM_ENABLE_AVX512 "Enable AVX512 instructions" ON)
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
+
+>>>>>>> 231da001c34e7faea8b90b2bd409620c1ec0f9ec
 
 add_executable(tsmm)
 target_sources(tsmm
   PRIVATE
     src/tsmm.cpp
 )
+<<<<<<< HEAD
 
+=======
+>>>>>>> 231da001c34e7faea8b90b2bd409620c1ec0f9ec
 add_executable(bench_blas)
 target_sources(bench_blas
   PRIVATE
     src/bench.cpp  
 )
+<<<<<<< HEAD
 
 
 target_include_directories(tsmm
@@ -69,6 +80,23 @@ target_include_directories(tsmm
 target_include_directories(bench_blas
     PUBLIC
         ${MKL_INCLUDE_DIRS}
+=======
+target_link_directories(
+  bench_blas
+  PRIVATE
+  /opt/intel/oneapi/mkl/latest/lib/
+)
+
+target_link_libraries(bench_blas
+  PRIVATE
+  mkl_intel_lp64
+  mkl_sequential
+  mkl_core
+)
+target_include_directories(tsmm
+  PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
+>>>>>>> 231da001c34e7faea8b90b2bd409620c1ec0f9ec
 )
 
 target_compile_options(tsmm
@@ -79,6 +107,7 @@ target_compile_options(tsmm
     $<$<BOOL:${TSMM_ENABLE_AVX512}>:-mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl>
 )
 
+<<<<<<< HEAD
 if(OpenMP_CXX_FOUND)
     target_link_libraries(tsmm PUBLIC OpenMP::OpenMP_CXX)
     target_link_libraries(bench_blas PUBLIC OpenMP::OpenMP_CXX)
@@ -89,6 +118,11 @@ target_link_libraries(bench_blas
     ${MKL_LIBRARIES}
 )
 
+=======
+
+
+# 安装规则
+>>>>>>> 231da001c34e7faea8b90b2bd409620c1ec0f9ec
 install(TARGETS tsmm
   RUNTIME DESTINATION bin
 )
@@ -96,4 +130,8 @@ install(TARGETS tsmm
 install(DIRECTORY include/
   DESTINATION include
   FILES_MATCHING PATTERN "*.h"
+<<<<<<< HEAD
 )
+=======
+)
+>>>>>>> 231da001c34e7faea8b90b2bd409620c1ec0f9ec
