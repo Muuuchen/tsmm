@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/root/workspace/tsmm/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
