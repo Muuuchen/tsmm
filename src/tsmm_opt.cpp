@@ -1,7 +1,7 @@
+#include "../include/final.h"
 #include "../include/micro_kernel24x8.h"
 #include "timer.h" // 包含 Timer 类头文件
 #include <iostream>
-#include "../include/final.h"
 
 int main() {
   const int M = 24 * 2000;
@@ -12,8 +12,8 @@ int main() {
   alignas(64) double C[M * N];
   Timer timer("tsmm_kernel", M, N, K);
   timer.start();
-  // kernel_tsmm<24, 8>(A, B, C, M, N, K, M, K, M);
-  mydgemm_cpu_v18(M, N, K, 1.0, A, M, B, K, 0, C, M);
+  kernel_tsmm<16, 2>(A, B, C, M, N, K, M, K, M);
+  // mydgemm_cpu_v18(M, N, K, 1.0, A, M, B, K, 0, C, M);
 
   timer.stop();
 

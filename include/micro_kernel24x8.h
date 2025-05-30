@@ -16,6 +16,37 @@ inline void MicroKernelImpl(double *A_start, double *B_start, double *C_start,
                             int K, int lda, int ldb, int ldc) {
   throw std::invalid_argument("not implement yet");
 }
+template <>
+inline void MicroKernelImpl<16, 2>(double *A_start, double *B_start,
+                                   double *C_start, int K, int lda, int ldb,
+                                   int ldc) {
+  __m512d a0, a1;
+  __m512d b0, b1;
+  ;
+  __m512d c_accum[2][2];
+  for (int j = 0; j < 2; j++) {
+    for (int i = 0; i < 2; i++) {
+      c_accum[i][j] = _mm512_loadu_pd(&C_start[i * 8 + ldc * j]);
+    }
+  }
+
+  for (int k = 0; k < K; k++) {
+    a0 = _mm512_loadu_pd(&A_start[0 + lda * k]);
+    a1 = _mm512_loadu_pd(&A_start[0 + 8 + lda * k]);
+    b0 = _mm512_set1_pd(B_start[k + ldb * (0)]);
+    b1 = _mm512_set1_pd(B_start[k + ldb * (1)]);
+    c_accum[0][0] = _mm512_fmadd_pd(a0, b0, c_accum[0][0]);
+    c_accum[1][0] = _mm512_fmadd_pd(a1, b0, c_accum[0][1]);
+    c_accum[0][1] = _mm512_fmadd_pd(a0, b1, c_accum[0][1]);
+    c_accum[1][1] = _mm512_fmadd_pd(a1, b1, c_accum[1][1]);
+  }
+#pragma unroll
+  for (int j = 0; j < 2; j++) {
+    for (int i = 0; i < 2; i++) {
+      _mm512_storeu_pd(&C_start[i * 8 + ldc * j], c_accum[i][j]);
+    }
+  }
+}
 
 template <>
 inline void MicroKernelImpl<24, 8>(double *A_start, double *B_start,

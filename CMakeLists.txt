@@ -79,7 +79,7 @@ project(tsmm
 )
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
@@ -162,6 +162,7 @@ target_compile_options(tsmm_opt
     -O3
     -g
     -march=native
+    -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl  # 明确指定需要的AVX512特性
     $<$<BOOL:${TSMM_ENABLE_AVX512}>:-mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl>
 )
 # if(OpenMP_CXX_FOUND)
