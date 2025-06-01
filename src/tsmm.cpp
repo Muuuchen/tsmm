@@ -8,7 +8,7 @@
 #include <vector>
 
 int main() {
-  constexpr int m = 4000, n = 16000, k = 128;
+  constexpr int m = 40000, n = 16000, k = 128;
   Tensor<double> lhs({m, k}, true, 0, 1);
   Tensor<double> rhs({k, n}, true, 0, 1);
   Tensor<double> output({m, n});
