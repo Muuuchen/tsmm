@@ -18,8 +18,6 @@ int main() {
   ldc = M;
   double *a, *b, *c, *cref, *cold;
 
-  printf("MY_MMult = [\n");
-
   a = (double *)malloc(ALIGNMENT + lda * (K + 1) * sizeof(double));
   b = (double *)malloc(ALIGNMENT + ldb * N * sizeof(double));
   c = (double *)malloc(ALIGNMENT + ldc * N * sizeof(double));
