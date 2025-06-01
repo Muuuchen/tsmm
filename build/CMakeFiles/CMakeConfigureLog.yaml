@@ -39,8 +39,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-6sm91O"
-      binary: "/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-6sm91O"
+      source: "/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-p33KRW"
+      binary: "/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-p33KRW"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -50,13 +50,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-6sm91O'
+        Change Dir: '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-p33KRW'
         
-        Run Build Command(s): /opt/conda/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_09a99/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_09a99.dir/build.make CMakeFiles/cmTC_09a99.dir/build
-        gmake[1]: Entering directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-6sm91O'
-        Building CXX object CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o -c /opt/conda/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/conda/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e0fdd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e0fdd.dir/build.make CMakeFiles/cmTC_e0fdd.dir/build
+        gmake[1]: Entering directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-p33KRW'
+        Building CXX object CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o -c /opt/conda/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -66,8 +66,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_09a99.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/conda/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_09a99.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccwFGrHo.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e0fdd.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/conda/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e0fdd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccvaIULE.s
         GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -76,8 +76,11 @@ events:
         ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/opt/intel/oneapi/tbb/2022.1/env/../include"
         #include "..." search starts here:
         #include <...> search starts here:
+         /opt/intel/oneapi/umf/0.10/include
+         /opt/intel/oneapi/mkl/2025.1/include
          /usr/include/c++/11
          /usr/include/x86_64-linux-gnu/c++/11
          /usr/include/c++/11/backward
@@ -91,15 +94,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_09a99.dir/'
-         as -v --64 -o CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccwFGrHo.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e0fdd.dir/'
+         as -v --64 -o CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccvaIULE.s
         GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_09a99
-        /opt/conda/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09a99.dir/link.txt --verbose=1
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_09a99
+        LIBRARY_PATH=/opt/intel/oneapi/tcm/1.3/lib/../lib/:/opt/intel/oneapi/umf/0.10/lib/../lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mkl/2025.1/lib/../lib/:/opt/intel/oneapi/compiler/2025.1/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tcm/1.3/lib/:/opt/intel/oneapi/umf/0.10/lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mkl/2025.1/lib/:/opt/intel/oneapi/compiler/2025.1/lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_e0fdd
+        /opt/conda/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0fdd.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e0fdd
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -111,14 +114,14 @@ events:
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_09a99' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_09a99.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrd6Cdk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_09a99 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/local/cuda/lib64/stubs -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        LIBRARY_PATH=/opt/intel/oneapi/tcm/1.3/lib/../lib/:/opt/intel/oneapi/umf/0.10/lib/../lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mkl/2025.1/lib/../lib/:/opt/intel/oneapi/compiler/2025.1/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tcm/1.3/lib/:/opt/intel/oneapi/umf/0.10/lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mkl/2025.1/lib/:/opt/intel/oneapi/compiler/2025.1/lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e0fdd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e0fdd.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2l62C2.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e0fdd /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/opt/intel/oneapi/tcm/1.3/lib/../lib -L/opt/intel/oneapi/umf/0.10/lib/../lib -L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mkl/2025.1/lib/../lib -L/opt/intel/oneapi/compiler/2025.1/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tcm/1.3/lib -L/opt/intel/oneapi/umf/0.10/lib -L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mkl/2025.1/lib -L/opt/intel/oneapi/compiler/2025.1/lib -L/usr/local/cuda/lib64/stubs -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
         collect2 version 11.4.0
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrd6Cdk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_09a99 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/local/cuda/lib64/stubs -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2l62C2.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e0fdd /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/opt/intel/oneapi/tcm/1.3/lib/../lib -L/opt/intel/oneapi/umf/0.10/lib/../lib -L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mkl/2025.1/lib/../lib -L/opt/intel/oneapi/compiler/2025.1/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tcm/1.3/lib -L/opt/intel/oneapi/umf/0.10/lib -L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mkl/2025.1/lib -L/opt/intel/oneapi/compiler/2025.1/lib -L/usr/local/cuda/lib64/stubs -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.38
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_09a99' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_09a99.'
-        gmake[1]: Leaving directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-6sm91O'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e0fdd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e0fdd.'
+        gmake[1]: Leaving directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-p33KRW'
         
       exitCode: 0
   -
@@ -131,6 +134,8 @@ events:
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
+          add: [/opt/intel/oneapi/umf/0.10/include]
+          add: [/opt/intel/oneapi/mkl/2025.1/include]
           add: [/usr/include/c++/11]
           add: [/usr/include/x86_64-linux-gnu/c++/11]
           add: [/usr/include/c++/11/backward]
@@ -139,6 +144,8 @@ events:
           add: [/usr/include/x86_64-linux-gnu]
           add: [/usr/include]
         end of search list found
+        collapse include dir [/opt/intel/oneapi/umf/0.10/include] ==> [/opt/intel/oneapi/umf/0.10/include]
+        collapse include dir [/opt/intel/oneapi/mkl/2025.1/include] ==> [/opt/intel/oneapi/mkl/2025.1/include]
         collapse include dir [/usr/include/c++/11] ==> [/usr/include/c++/11]
         collapse include dir [/usr/include/x86_64-linux-gnu/c++/11] ==> [/usr/include/x86_64-linux-gnu/c++/11]
         collapse include dir [/usr/include/c++/11/backward] ==> [/usr/include/c++/11/backward]
@@ -146,7 +153,7 @@ events:
         collapse include dir [/usr/local/include] ==> [/usr/local/include]
         collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
         collapse include dir [/usr/include] ==> [/usr/include]
-        implicit include dirs: [/usr/include/c++/11;/usr/include/x86_64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+        implicit include dirs: [/opt/intel/oneapi/umf/0.10/include;/opt/intel/oneapi/mkl/2025.1/include;/usr/include/c++/11;/usr/include/x86_64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
       
       
   -
@@ -159,13 +166,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-6sm91O']
+        ignore line: [Change Dir: '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-p33KRW']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/conda/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_09a99/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_09a99.dir/build.make CMakeFiles/cmTC_09a99.dir/build]
-        ignore line: [gmake[1]: Entering directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-6sm91O']
-        ignore line: [Building CXX object CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o -c /opt/conda/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/conda/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e0fdd/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e0fdd.dir/build.make CMakeFiles/cmTC_e0fdd.dir/build]
+        ignore line: [gmake[1]: Entering directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-p33KRW']
+        ignore line: [Building CXX object CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o -c /opt/conda/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -175,8 +182,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_09a99.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/conda/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_09a99.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccwFGrHo.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e0fdd.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/conda/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e0fdd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccvaIULE.s]
         ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -185,8 +192,11 @@ events:
         ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/opt/intel/oneapi/tbb/2022.1/env/../include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/intel/oneapi/umf/0.10/include]
+        ignore line: [ /opt/intel/oneapi/mkl/2025.1/include]
         ignore line: [ /usr/include/c++/11]
         ignore line: [ /usr/include/x86_64-linux-gnu/c++/11]
         ignore line: [ /usr/include/c++/11/backward]
@@ -200,15 +210,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_09a99.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccwFGrHo.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e0fdd.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccvaIULE.s]
         ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_09a99]
-        ignore line: [/opt/conda/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09a99.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_09a99]
+        ignore line: [LIBRARY_PATH=/opt/intel/oneapi/tcm/1.3/lib/../lib/:/opt/intel/oneapi/umf/0.10/lib/../lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mkl/2025.1/lib/../lib/:/opt/intel/oneapi/compiler/2025.1/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tcm/1.3/lib/:/opt/intel/oneapi/umf/0.10/lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mkl/2025.1/lib/:/opt/intel/oneapi/compiler/2025.1/lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_e0fdd]
+        ignore line: [/opt/conda/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0fdd.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e0fdd]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -220,14 +230,14 @@ events:
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_09a99' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_09a99.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrd6Cdk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_09a99 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/local/cuda/lib64/stubs -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [LIBRARY_PATH=/opt/intel/oneapi/tcm/1.3/lib/../lib/:/opt/intel/oneapi/umf/0.10/lib/../lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mkl/2025.1/lib/../lib/:/opt/intel/oneapi/compiler/2025.1/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tcm/1.3/lib/:/opt/intel/oneapi/umf/0.10/lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mkl/2025.1/lib/:/opt/intel/oneapi/compiler/2025.1/lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e0fdd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e0fdd.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2l62C2.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e0fdd /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/opt/intel/oneapi/tcm/1.3/lib/../lib -L/opt/intel/oneapi/umf/0.10/lib/../lib -L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mkl/2025.1/lib/../lib -L/opt/intel/oneapi/compiler/2025.1/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tcm/1.3/lib -L/opt/intel/oneapi/umf/0.10/lib -L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mkl/2025.1/lib -L/opt/intel/oneapi/compiler/2025.1/lib -L/usr/local/cuda/lib64/stubs -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccrd6Cdk.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc2l62C2.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -245,10 +255,15 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_09a99] ==> ignore
+          arg [cmTC_e0fdd] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/opt/intel/oneapi/tcm/1.3/lib/../lib] ==> dir [/opt/intel/oneapi/tcm/1.3/lib/../lib]
+          arg [-L/opt/intel/oneapi/umf/0.10/lib/../lib] ==> dir [/opt/intel/oneapi/umf/0.10/lib/../lib]
+          arg [-L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib] ==> dir [/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib]
+          arg [-L/opt/intel/oneapi/mkl/2025.1/lib/../lib] ==> dir [/opt/intel/oneapi/mkl/2025.1/lib/../lib]
+          arg [-L/opt/intel/oneapi/compiler/2025.1/lib/../lib] ==> dir [/opt/intel/oneapi/compiler/2025.1/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
@@ -256,10 +271,15 @@ events:
           arg [-L/lib/../lib] ==> dir [/lib/../lib]
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/opt/intel/oneapi/tcm/1.3/lib] ==> dir [/opt/intel/oneapi/tcm/1.3/lib]
+          arg [-L/opt/intel/oneapi/umf/0.10/lib] ==> dir [/opt/intel/oneapi/umf/0.10/lib]
+          arg [-L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8] ==> dir [/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8]
+          arg [-L/opt/intel/oneapi/mkl/2025.1/lib] ==> dir [/opt/intel/oneapi/mkl/2025.1/lib]
+          arg [-L/opt/intel/oneapi/compiler/2025.1/lib] ==> dir [/opt/intel/oneapi/compiler/2025.1/lib]
           arg [-L/usr/local/cuda/lib64/stubs] ==> dir [/usr/local/cuda/lib64/stubs]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -270,11 +290,16 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 11.4.0]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrd6Cdk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_09a99 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/local/cuda/lib64/stubs -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_09a99.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2l62C2.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e0fdd /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/opt/intel/oneapi/tcm/1.3/lib/../lib -L/opt/intel/oneapi/umf/0.10/lib/../lib -L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mkl/2025.1/lib/../lib -L/opt/intel/oneapi/compiler/2025.1/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tcm/1.3/lib -L/opt/intel/oneapi/umf/0.10/lib -L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mkl/2025.1/lib -L/opt/intel/oneapi/compiler/2025.1/lib -L/usr/local/cuda/lib64/stubs -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_e0fdd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/opt/intel/oneapi/tcm/1.3/lib/../lib] ==> [/opt/intel/oneapi/tcm/1.3/lib]
+        collapse library dir [/opt/intel/oneapi/umf/0.10/lib/../lib] ==> [/opt/intel/oneapi/umf/0.10/lib]
+        collapse library dir [/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib] ==> [/opt/intel/oneapi/tbb/2022.1/lib/intel64/lib]
+        collapse library dir [/opt/intel/oneapi/mkl/2025.1/lib/../lib] ==> [/opt/intel/oneapi/mkl/2025.1/lib]
+        collapse library dir [/opt/intel/oneapi/compiler/2025.1/lib/../lib] ==> [/opt/intel/oneapi/compiler/2025.1/lib]
         collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
         collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
         collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
@@ -282,11 +307,16 @@ events:
         collapse library dir [/lib/../lib] ==> [/lib]
         collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
         collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/opt/intel/oneapi/tcm/1.3/lib] ==> [/opt/intel/oneapi/tcm/1.3/lib]
+        collapse library dir [/opt/intel/oneapi/umf/0.10/lib] ==> [/opt/intel/oneapi/umf/0.10/lib]
+        collapse library dir [/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8] ==> [/opt/intel/oneapi/tbb/2022.1/lib/intel64/gcc4.8]
+        collapse library dir [/opt/intel/oneapi/mkl/2025.1/lib] ==> [/opt/intel/oneapi/mkl/2025.1/lib]
+        collapse library dir [/opt/intel/oneapi/compiler/2025.1/lib] ==> [/opt/intel/oneapi/compiler/2025.1/lib]
         collapse library dir [/usr/local/cuda/lib64/stubs] ==> [/usr/local/cuda/lib64/stubs]
         collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
         implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
         implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib;/usr/local/cuda/lib64/stubs]
+        implicit dirs: [/opt/intel/oneapi/tcm/1.3/lib;/opt/intel/oneapi/umf/0.10/lib;/opt/intel/oneapi/tbb/2022.1/lib/intel64/lib;/opt/intel/oneapi/mkl/2025.1/lib;/opt/intel/oneapi/compiler/2025.1/lib;/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib;/opt/intel/oneapi/tbb/2022.1/lib/intel64/gcc4.8;/usr/local/cuda/lib64/stubs]
         implicit fwks: []
       
       
@@ -308,8 +338,8 @@ events:
       - "CMakeLists.txt:19 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-W7evq9"
-      binary: "/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-W7evq9"
+      source: "/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-iDDrUG"
+      binary: "/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-iDDrUG"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -Wall -Wextra -Wpedantic -O3"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -319,13 +349,13 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
       cached: true
       stdout: |
-        Change Dir: '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-W7evq9'
+        Change Dir: '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-iDDrUG'
         
-        Run Build Command(s): /opt/conda/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a9da2/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_a9da2.dir/build.make CMakeFiles/cmTC_a9da2.dir/build
-        gmake[1]: Entering directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-W7evq9'
-        Building CXX object CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o
-        /usr/bin/c++   -Wall -Wextra -Wpedantic -O3 -fopenmp -v -std=c++17 -o CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o -c /root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-W7evq9/OpenMPTryFlag.cpp
+        Run Build Command(s): /opt/conda/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6c195/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6c195.dir/build.make CMakeFiles/cmTC_6c195.dir/build
+        gmake[1]: Entering directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-iDDrUG'
+        Building CXX object CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/c++   -Wall -Wextra -Wpedantic -O3 -fopenmp -v -std=c++17 -o CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o -c /root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-iDDrUG/OpenMPTryFlag.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -335,8 +365,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a9da2.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-W7evq9/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_a9da2.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -O3 -Wall -Wextra -Wpedantic -std=c++17 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccwB5v29.s
+        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_6c195.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-iDDrUG/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_6c195.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -O3 -Wall -Wextra -Wpedantic -std=c++17 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccwq6rkn.s
         GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -345,8 +375,11 @@ events:
         ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/opt/intel/oneapi/tbb/2022.1/env/../include"
         #include "..." search starts here:
         #include <...> search starts here:
+         /opt/intel/oneapi/umf/0.10/include
+         /opt/intel/oneapi/mkl/2025.1/include
          /usr/include/c++/11
          /usr/include/x86_64-linux-gnu/c++/11
          /usr/include/c++/11/backward
@@ -360,15 +393,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
-        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a9da2.dir/'
-         as -v --64 -o CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o /tmp/ccwB5v29.s
+        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_6c195.dir/'
+         as -v --64 -o CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o /tmp/ccwq6rkn.s
         GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.'
-        Linking CXX executable cmTC_a9da2
-        /opt/conda/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9da2.dir/link.txt --verbose=1
-        /usr/bin/c++  -Wall -Wextra -Wpedantic -O3 -fopenmp -v CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o -o cmTC_a9da2  -v
+        LIBRARY_PATH=/opt/intel/oneapi/tcm/1.3/lib/../lib/:/opt/intel/oneapi/umf/0.10/lib/../lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mkl/2025.1/lib/../lib/:/opt/intel/oneapi/compiler/2025.1/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tcm/1.3/lib/:/opt/intel/oneapi/umf/0.10/lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mkl/2025.1/lib/:/opt/intel/oneapi/compiler/2025.1/lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.'
+        Linking CXX executable cmTC_6c195
+        /opt/conda/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c195.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall -Wextra -Wpedantic -O3 -fopenmp -v CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o -o cmTC_6c195  -v
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -380,12 +413,12 @@ events:
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        LIBRARY_PATH=/opt/intel/oneapi/tcm/1.3/lib/../lib/:/opt/intel/oneapi/umf/0.10/lib/../lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mkl/2025.1/lib/../lib/:/opt/intel/oneapi/compiler/2025.1/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tcm/1.3/lib/:/opt/intel/oneapi/umf/0.10/lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mkl/2025.1/lib/:/opt/intel/oneapi/compiler/2025.1/lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
         Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec
-        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-o' 'cmTC_a9da2' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_a9da2.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc18jvlB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a9da2 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/local/cuda/lib64/stubs -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o
-        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-o' 'cmTC_a9da2' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_a9da2.'
-        gmake[1]: Leaving directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-W7evq9'
+        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-o' 'cmTC_6c195' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_6c195.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwljPHs.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_6c195 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/opt/intel/oneapi/tcm/1.3/lib/../lib -L/opt/intel/oneapi/umf/0.10/lib/../lib -L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mkl/2025.1/lib/../lib -L/opt/intel/oneapi/compiler/2025.1/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tcm/1.3/lib -L/opt/intel/oneapi/umf/0.10/lib -L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mkl/2025.1/lib -L/opt/intel/oneapi/compiler/2025.1/lib -L/usr/local/cuda/lib64/stubs -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-o' 'cmTC_6c195' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_6c195.'
+        gmake[1]: Leaving directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-iDDrUG'
         
       exitCode: 0
   -
@@ -397,13 +430,13 @@ events:
     message: |
       Parsed CXX OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-W7evq9']
+        ignore line: [Change Dir: '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-iDDrUG']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/conda/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a9da2/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a9da2.dir/build.make CMakeFiles/cmTC_a9da2.dir/build]
-        ignore line: [gmake[1]: Entering directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-W7evq9']
-        ignore line: [Building CXX object CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o]
-        ignore line: [/usr/bin/c++   -Wall -Wextra -Wpedantic -O3 -fopenmp -v -std=c++17 -o CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o -c /root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-W7evq9/OpenMPTryFlag.cpp]
+        ignore line: [Run Build Command(s): /opt/conda/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6c195/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_6c195.dir/build.make CMakeFiles/cmTC_6c195.dir/build]
+        ignore line: [gmake[1]: Entering directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-iDDrUG']
+        ignore line: [Building CXX object CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/usr/bin/c++   -Wall -Wextra -Wpedantic -O3 -fopenmp -v -std=c++17 -o CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o -c /root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-iDDrUG/OpenMPTryFlag.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -413,8 +446,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a9da2.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-W7evq9/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_a9da2.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -O3 -Wall -Wextra -Wpedantic -std=c++17 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccwB5v29.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_6c195.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-iDDrUG/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_6c195.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -O3 -Wall -Wextra -Wpedantic -std=c++17 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccwq6rkn.s]
         ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -423,8 +456,11 @@ events:
         ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/opt/intel/oneapi/tbb/2022.1/env/../include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/intel/oneapi/umf/0.10/include]
+        ignore line: [ /opt/intel/oneapi/mkl/2025.1/include]
         ignore line: [ /usr/include/c++/11]
         ignore line: [ /usr/include/x86_64-linux-gnu/c++/11]
         ignore line: [ /usr/include/c++/11/backward]
@@ -438,15 +474,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a9da2.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o /tmp/ccwB5v29.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_6c195.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o /tmp/ccwq6rkn.s]
         ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.']
-        ignore line: [Linking CXX executable cmTC_a9da2]
-        ignore line: [/opt/conda/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9da2.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -Wall -Wextra -Wpedantic -O3 -fopenmp -v CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o -o cmTC_a9da2  -v]
+        ignore line: [LIBRARY_PATH=/opt/intel/oneapi/tcm/1.3/lib/../lib/:/opt/intel/oneapi/umf/0.10/lib/../lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mkl/2025.1/lib/../lib/:/opt/intel/oneapi/compiler/2025.1/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tcm/1.3/lib/:/opt/intel/oneapi/umf/0.10/lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mkl/2025.1/lib/:/opt/intel/oneapi/compiler/2025.1/lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-std=c++17' '-o' 'CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.']
+        ignore line: [Linking CXX executable cmTC_6c195]
+        ignore line: [/opt/conda/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c195.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -Wall -Wextra -Wpedantic -O3 -fopenmp -v CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o -o cmTC_6c195  -v]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -458,15 +494,15 @@ events:
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [LIBRARY_PATH=/opt/intel/oneapi/tcm/1.3/lib/../lib/:/opt/intel/oneapi/umf/0.10/lib/../lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mkl/2025.1/lib/../lib/:/opt/intel/oneapi/compiler/2025.1/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tcm/1.3/lib/:/opt/intel/oneapi/umf/0.10/lib/:/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mkl/2025.1/lib/:/opt/intel/oneapi/compiler/2025.1/lib/:/usr/local/cuda/lib64/stubs/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
         ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-o' 'cmTC_a9da2' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_a9da2.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc18jvlB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a9da2 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/local/cuda/lib64/stubs -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-O3' '-fopenmp' '-v' '-o' 'cmTC_6c195' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_6c195.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwljPHs.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_6c195 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/opt/intel/oneapi/tcm/1.3/lib/../lib -L/opt/intel/oneapi/umf/0.10/lib/../lib -L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mkl/2025.1/lib/../lib -L/opt/intel/oneapi/compiler/2025.1/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tcm/1.3/lib -L/opt/intel/oneapi/umf/0.10/lib -L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mkl/2025.1/lib -L/opt/intel/oneapi/compiler/2025.1/lib -L/usr/local/cuda/lib64/stubs -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cc18jvlB.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccwljPHs.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
@@ -485,7 +521,12 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_a9da2] ==> ignore
+          arg [cmTC_6c195] ==> ignore
+          arg [-L/opt/intel/oneapi/tcm/1.3/lib/../lib] ==> dir [/opt/intel/oneapi/tcm/1.3/lib/../lib]
+          arg [-L/opt/intel/oneapi/umf/0.10/lib/../lib] ==> dir [/opt/intel/oneapi/umf/0.10/lib/../lib]
+          arg [-L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib] ==> dir [/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib]
+          arg [-L/opt/intel/oneapi/mkl/2025.1/lib/../lib] ==> dir [/opt/intel/oneapi/mkl/2025.1/lib/../lib]
+          arg [-L/opt/intel/oneapi/compiler/2025.1/lib/../lib] ==> dir [/opt/intel/oneapi/compiler/2025.1/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
@@ -493,9 +534,14 @@ events:
           arg [-L/lib/../lib] ==> dir [/lib/../lib]
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/opt/intel/oneapi/tcm/1.3/lib] ==> dir [/opt/intel/oneapi/tcm/1.3/lib]
+          arg [-L/opt/intel/oneapi/umf/0.10/lib] ==> dir [/opt/intel/oneapi/umf/0.10/lib]
+          arg [-L/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8] ==> dir [/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8]
+          arg [-L/opt/intel/oneapi/mkl/2025.1/lib] ==> dir [/opt/intel/oneapi/mkl/2025.1/lib]
+          arg [-L/opt/intel/oneapi/compiler/2025.1/lib] ==> dir [/opt/intel/oneapi/compiler/2025.1/lib]
           arg [-L/usr/local/cuda/lib64/stubs] ==> dir [/usr/local/cuda/lib64/stubs]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-          arg [CMakeFiles/cmTC_a9da2.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_6c195.dir/OpenMPTryFlag.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgomp] ==> lib [gomp]
@@ -505,6 +551,11 @@ events:
           arg [-lc] ==> lib [c]
           arg [-lgcc_s] ==> lib [gcc_s]
           arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/opt/intel/oneapi/tcm/1.3/lib/../lib] ==> [/opt/intel/oneapi/tcm/1.3/lib]
+        collapse library dir [/opt/intel/oneapi/umf/0.10/lib/../lib] ==> [/opt/intel/oneapi/umf/0.10/lib]
+        collapse library dir [/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8/../lib] ==> [/opt/intel/oneapi/tbb/2022.1/lib/intel64/lib]
+        collapse library dir [/opt/intel/oneapi/mkl/2025.1/lib/../lib] ==> [/opt/intel/oneapi/mkl/2025.1/lib]
+        collapse library dir [/opt/intel/oneapi/compiler/2025.1/lib/../lib] ==> [/opt/intel/oneapi/compiler/2025.1/lib]
         collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
         collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
         collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
@@ -512,11 +563,16 @@ events:
         collapse library dir [/lib/../lib] ==> [/lib]
         collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
         collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/opt/intel/oneapi/tcm/1.3/lib] ==> [/opt/intel/oneapi/tcm/1.3/lib]
+        collapse library dir [/opt/intel/oneapi/umf/0.10/lib] ==> [/opt/intel/oneapi/umf/0.10/lib]
+        collapse library dir [/opt/intel/oneapi/tbb/2022.1/env/../lib/intel64/gcc4.8] ==> [/opt/intel/oneapi/tbb/2022.1/lib/intel64/gcc4.8]
+        collapse library dir [/opt/intel/oneapi/mkl/2025.1/lib] ==> [/opt/intel/oneapi/mkl/2025.1/lib]
+        collapse library dir [/opt/intel/oneapi/compiler/2025.1/lib] ==> [/opt/intel/oneapi/compiler/2025.1/lib]
         collapse library dir [/usr/local/cuda/lib64/stubs] ==> [/usr/local/cuda/lib64/stubs]
         collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
         implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
         implicit objs: []
-        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib;/usr/local/cuda/lib64/stubs]
+        implicit dirs: [/opt/intel/oneapi/tcm/1.3/lib;/opt/intel/oneapi/umf/0.10/lib;/opt/intel/oneapi/tbb/2022.1/lib/intel64/lib;/opt/intel/oneapi/mkl/2025.1/lib;/opt/intel/oneapi/compiler/2025.1/lib;/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib;/opt/intel/oneapi/tbb/2022.1/lib/intel64/gcc4.8;/usr/local/cuda/lib64/stubs]
         implicit fwks: []
       
       
@@ -528,8 +584,8 @@ events:
       - "CMakeLists.txt:19 (find_package)"
     description: "Detecting CXX OpenMP version"
     directories:
-      source: "/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-VRm0mQ"
-      binary: "/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-VRm0mQ"
+      source: "/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-xxxGjP"
+      binary: "/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-xxxGjP"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -Wall -Wextra -Wpedantic -O3"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -539,17 +595,17 @@ events:
       variable: "OpenMP_SPECTEST_CXX_"
       cached: true
       stdout: |
-        Change Dir: '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-VRm0mQ'
+        Change Dir: '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-xxxGjP'
         
-        Run Build Command(s): /opt/conda/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c7a43/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_c7a43.dir/build.make CMakeFiles/cmTC_c7a43.dir/build
-        gmake[1]: Entering directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-VRm0mQ'
-        Building CXX object CMakeFiles/cmTC_c7a43.dir/OpenMPCheckVersion.cpp.o
-        /usr/bin/c++   -Wall -Wextra -Wpedantic -O3 -fopenmp -std=c++17 -o CMakeFiles/cmTC_c7a43.dir/OpenMPCheckVersion.cpp.o -c /root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-VRm0mQ/OpenMPCheckVersion.cpp
-        Linking CXX executable cmTC_c7a43
-        /opt/conda/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7a43.dir/link.txt --verbose=1
-        /usr/bin/c++  -Wall -Wextra -Wpedantic -O3 -fopenmp CMakeFiles/cmTC_c7a43.dir/OpenMPCheckVersion.cpp.o -o cmTC_c7a43
-        gmake[1]: Leaving directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-VRm0mQ'
+        Run Build Command(s): /opt/conda/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4d467/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4d467.dir/build.make CMakeFiles/cmTC_4d467.dir/build
+        gmake[1]: Entering directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-xxxGjP'
+        Building CXX object CMakeFiles/cmTC_4d467.dir/OpenMPCheckVersion.cpp.o
+        /usr/bin/c++   -Wall -Wextra -Wpedantic -O3 -fopenmp -std=c++17 -o CMakeFiles/cmTC_4d467.dir/OpenMPCheckVersion.cpp.o -c /root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-xxxGjP/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_4d467
+        /opt/conda/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d467.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall -Wextra -Wpedantic -O3 -fopenmp CMakeFiles/cmTC_4d467.dir/OpenMPCheckVersion.cpp.o -o cmTC_4d467
+        gmake[1]: Leaving directory '/root/workspace/tsmm/build/CMakeFiles/CMakeScratch/TryCompile-xxxGjP'
         
       exitCode: 0
 ...

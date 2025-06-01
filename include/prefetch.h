@@ -3,7 +3,7 @@
 #define A(i, j) a[(j) * lda + (i)]
 #define B(i, j) b[(j) * ldb + (i)]
 #define C(i, j) c[(j) * ldc + (i)]
-#define BT(i, j) b[(i) * ldb + (j)] // row major for packedB
+#define BT(i, j) b[(i) * ldb + (j)] 
 
 #define min_(i, j) ((i) < (j) ? (i) : (j))
 /* Routine for computing C = A * B + C */
@@ -14,13 +14,10 @@
 #define nc 1300
 
 #define PREFETCH_A(offset) __builtin_prefetch((char *)(aptr + offset), 0)
-// #define PREFETCH_A(offset)
 
-// #define PREFETCH_B(offset) __builtin_prefetch ((char *)(bptr+offset), 0)
-#define PREFETCH_B(offset)
+#define PREFETCH_B(offset) __builtin_prefetch((char *)(bptr + offset), 0)
 
 #define PREFETCH_C(i, j) __builtin_prefetch((char *)&C((i) * 8, j), 0, 1)
-// #define PREFETCH_C(i,j)
 
 #define LOAD_C                                                                 \
   __m512d c_00 = _mm512_load_pd(&C(0 * 8, 0));                                 \
@@ -206,40 +203,27 @@ void InnerKernel(int m, int n, int k, double *a, int lda, double *b, int ldb,
 void AddDot24x8(int k, double *a, int lda, double *b, int ldb, double *c,
                 int ldc) {
   ZERO_C;
-  // LOAD_C;
+
   __m512d b_0, b_1, b_2, b_3;
   __m512d a_0, a_1, a_2;
   double *aptr = a;
   double *bptr = b;
   int p = 0;
   for (p = 0; p < k - 2; p += 2) {
-    // update tile
+
     a_0 = _mm512_load_pd(aptr);
     a_1 = _mm512_load_pd(aptr + 8);
     a_2 = _mm512_load_pd(aptr + 16);
     COMPUTE_M24N8;
     aptr += 24;
     bptr += 8;
-    // update tile
+
     a_0 = _mm512_load_pd(aptr);
     a_1 = _mm512_load_pd(aptr + 8);
     a_2 = _mm512_load_pd(aptr + 16);
     COMPUTE_M24N8;
     aptr += 24;
     bptr += 8;
-    // a_0 = _mm512_load_pd(aptr);
-    // a_1 = _mm512_load_pd(aptr+8);
-    // a_2 = _mm512_load_pd(aptr+16);
-    // COMPUTE_M24N8;
-    // PREFETCH_B(kc);
-    // aptr += 24;
-    // bptr += 8;
-    // a_0 = _mm512_load_pd(aptr);
-    // a_1 = _mm512_load_pd(aptr+8);
-    // a_2 = _mm512_load_pd(aptr+16);
-    // COMPUTE_M24N8;
-    // aptr += 24;
-    // bptr += 8;
   }
   a_0 = _mm512_load_pd(aptr);
   a_1 = _mm512_load_pd(aptr + 8);
@@ -280,7 +264,7 @@ void AddDot24x8(int k, double *a, int lda, double *b, int ldb, double *c,
   c_27 = _mm512_fmadd_pd(a_2, b_3, c_27);
   aptr += 24;
   bptr += 8;
-  // update tile
+
   a_0 = _mm512_load_pd(aptr);
   a_1 = _mm512_load_pd(aptr + 8);
   a_2 = _mm512_load_pd(aptr + 16);
@@ -304,7 +288,7 @@ void AddDot24x8(int k, double *a, int lda, double *b, int ldb, double *c,
   b_1 = _mm512_set1_pd(*(bptr + 5));
   b_2 = _mm512_set1_pd(*(bptr + 6));
   b_3 = _mm512_set1_pd(*(bptr + 7));
-  // prefetch C
+
   PREFETCH_C(0, 0);
   PREFETCH_C(0, 1);
   PREFETCH_C(0, 2);
@@ -320,7 +304,7 @@ void AddDot24x8(int k, double *a, int lda, double *b, int ldb, double *c,
   c_07 = _mm512_fmadd_pd(a_0, b_3, c_07);
   c_17 = _mm512_fmadd_pd(a_1, b_3, c_17);
   c_27 = _mm512_fmadd_pd(a_2, b_3, c_27);
-  // STORE_C
+
   STORE_ADD_C;
 }
 
