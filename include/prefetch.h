@@ -3,7 +3,7 @@
 #define A(i, j) a[(j) * lda + (i)]
 #define B(i, j) b[(j) * ldb + (i)]
 #define C(i, j) c[(j) * ldc + (i)]
-#define BT(i, j) b[(i) * ldb + (j)] 
+#define BT(i, j) b[(i) * ldb + (j)]
 
 #define min_(i, j) ((i) < (j) ? (i) : (j))
 /* Routine for computing C = A * B + C */

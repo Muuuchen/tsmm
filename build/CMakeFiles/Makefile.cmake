@@ -46,6 +46,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/prefetch_tsmm.dir/DependInfo.cmake"
   "CMakeFiles/tsmm.dir/DependInfo.cmake"
   "CMakeFiles/bench_blas.dir/DependInfo.cmake"
   "CMakeFiles/tsmm_opt.dir/DependInfo.cmake"

@@ -1,3 +1,4 @@
+/root/workspace/tsmm/build/CMakeFiles/prefetch_tsmm.dir
 /root/workspace/tsmm/build/CMakeFiles/tsmm.dir
 /root/workspace/tsmm/build/CMakeFiles/bench_blas.dir
 /root/workspace/tsmm/build/CMakeFiles/tsmm_opt.dir

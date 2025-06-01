@@ -49,6 +49,11 @@ else()
     message(FATAL_ERROR "MKL not found. Please install MKL or check your environment.")
 endif()
 
+add_executable(prefetch_tsmm)
+target_sources(prefetch_tsmm
+PRIVATE
+src/prefetch.cpp )
+
 add_executable(tsmm)
 target_sources(tsmm
   PRIVATE
@@ -79,7 +84,18 @@ target_include_directories(tsmm_opt
     PUBLIC
         $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
 )
+target_include_directories(prefetch_tsmm
+    PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
+)
 target_compile_options(tsmm 
+  PRIVATE
+    -O3
+    -g
+    -march=native
+    $<$<BOOL:${TSMM_ENABLE_AVX512}>:-mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl >
+)
+target_compile_options(prefetch_tsmm 
   PRIVATE
     -O3
     -g

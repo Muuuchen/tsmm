@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /root/workspace/tsmm/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/prefetch_tsmm.dir/all
 all: CMakeFiles/tsmm.dir/all
 all: CMakeFiles/bench_blas.dir/all
 all: CMakeFiles/tsmm_opt.dir/all
@@ -73,10 +74,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/prefetch_tsmm.dir/clean
 clean: CMakeFiles/tsmm.dir/clean
 clean: CMakeFiles/bench_blas.dir/clean
 clean: CMakeFiles/tsmm_opt.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/prefetch_tsmm.dir
+
+# All Build rule for target.
+CMakeFiles/prefetch_tsmm.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prefetch_tsmm.dir/build.make CMakeFiles/prefetch_tsmm.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prefetch_tsmm.dir/build.make CMakeFiles/prefetch_tsmm.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/workspace/tsmm/build/CMakeFiles --progress-num=3,4 "Built target prefetch_tsmm"
+.PHONY : CMakeFiles/prefetch_tsmm.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/prefetch_tsmm.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/tsmm/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/prefetch_tsmm.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/tsmm/build/CMakeFiles 0
+.PHONY : CMakeFiles/prefetch_tsmm.dir/rule
+
+# Convenience name for target.
+prefetch_tsmm: CMakeFiles/prefetch_tsmm.dir/rule
+.PHONY : prefetch_tsmm
+
+# clean rule for target.
+CMakeFiles/prefetch_tsmm.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prefetch_tsmm.dir/build.make CMakeFiles/prefetch_tsmm.dir/clean
+.PHONY : CMakeFiles/prefetch_tsmm.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tsmm.dir
@@ -85,7 +113,7 @@ clean: CMakeFiles/tsmm_opt.dir/clean
 CMakeFiles/tsmm.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsmm.dir/build.make CMakeFiles/tsmm.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsmm.dir/build.make CMakeFiles/tsmm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/workspace/tsmm/build/CMakeFiles --progress-num=3,4 "Built target tsmm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/workspace/tsmm/build/CMakeFiles --progress-num=5,6 "Built target tsmm"
 .PHONY : CMakeFiles/tsmm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,7 +165,7 @@ CMakeFiles/bench_blas.dir/clean:
 CMakeFiles/tsmm_opt.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsmm_opt.dir/build.make CMakeFiles/tsmm_opt.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tsmm_opt.dir/build.make CMakeFiles/tsmm_opt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/workspace/tsmm/build/CMakeFiles --progress-num=5,6 "Built target tsmm_opt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/workspace/tsmm/build/CMakeFiles --progress-num=7,8 "Built target tsmm_opt"
 .PHONY : CMakeFiles/tsmm_opt.dir/all
 
 # Build rule for subdir invocation for target.

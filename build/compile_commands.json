@@ -1,6 +1,12 @@
 [
 {
   "directory": "/root/workspace/tsmm/build",
+  "command": "/usr/bin/c++  -I/root/workspace/tsmm/include  -Wall -Wextra -Wpedantic -O3 -std=c++17 -O3 -g -march=native -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -o CMakeFiles/prefetch_tsmm.dir/src/prefetch.cpp.o -c /root/workspace/tsmm/src/prefetch.cpp",
+  "file": "/root/workspace/tsmm/src/prefetch.cpp",
+  "output": "CMakeFiles/prefetch_tsmm.dir/src/prefetch.cpp.o"
+},
+{
+  "directory": "/root/workspace/tsmm/build",
   "command": "/usr/bin/c++  -I/root/workspace/tsmm/include  -Wall -Wextra -Wpedantic -O3 -std=c++17 -O3 -g -march=native -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -fopenmp -o CMakeFiles/tsmm.dir/src/tsmm.cpp.o -c /root/workspace/tsmm/src/tsmm.cpp",
   "file": "/root/workspace/tsmm/src/tsmm.cpp",
   "output": "CMakeFiles/tsmm.dir/src/tsmm.cpp.o"

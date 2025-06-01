@@ -17,7 +17,7 @@ int main() {
   timer.start();
   /* kernel_tsmm<16, 2>(A, B, C, M, N, K, M, K, M);
    mydgemm_cpu_v18(M, N, K, 1.0, A, M, B, K, 0, C, M);*/
-  // tsmm_block_pack(A, B, C, M, N, K, M, K, M);
+  tsmm_block_pack(A, B, C, M, N, K, M, K, M);
   timer.stop();
   timer.print_result();
   timer.set_name("tsmm_prefetch");

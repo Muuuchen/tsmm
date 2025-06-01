@@ -162,6 +162,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named prefetch_tsmm
+
+# Build rule for target.
+prefetch_tsmm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prefetch_tsmm
+.PHONY : prefetch_tsmm
+
+# fast build rule for target.
+prefetch_tsmm/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prefetch_tsmm.dir/build.make CMakeFiles/prefetch_tsmm.dir/build
+.PHONY : prefetch_tsmm/fast
+
+#=============================================================================
 # Target rules for targets named tsmm
 
 # Build rule for target.
@@ -224,6 +237,30 @@ src/bench.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench_blas.dir/build.make CMakeFiles/bench_blas.dir/src/bench.cpp.s
 .PHONY : src/bench.cpp.s
 
+src/prefetch.o: src/prefetch.cpp.o
+.PHONY : src/prefetch.o
+
+# target to build an object file
+src/prefetch.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prefetch_tsmm.dir/build.make CMakeFiles/prefetch_tsmm.dir/src/prefetch.cpp.o
+.PHONY : src/prefetch.cpp.o
+
+src/prefetch.i: src/prefetch.cpp.i
+.PHONY : src/prefetch.i
+
+# target to preprocess a source file
+src/prefetch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prefetch_tsmm.dir/build.make CMakeFiles/prefetch_tsmm.dir/src/prefetch.cpp.i
+.PHONY : src/prefetch.cpp.i
+
+src/prefetch.s: src/prefetch.cpp.s
+.PHONY : src/prefetch.s
+
+# target to generate assembly for a file
+src/prefetch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prefetch_tsmm.dir/build.make CMakeFiles/prefetch_tsmm.dir/src/prefetch.cpp.s
+.PHONY : src/prefetch.cpp.s
+
 src/tsmm.o: src/tsmm.cpp.o
 .PHONY : src/tsmm.o
 
@@ -285,11 +322,15 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... bench_blas"
+	@echo "... prefetch_tsmm"
 	@echo "... tsmm"
 	@echo "... tsmm_opt"
 	@echo "... src/bench.o"
 	@echo "... src/bench.i"
 	@echo "... src/bench.s"
+	@echo "... src/prefetch.o"
+	@echo "... src/prefetch.i"
+	@echo "... src/prefetch.s"
 	@echo "... src/tsmm.o"
 	@echo "... src/tsmm.i"
 	@echo "... src/tsmm.s"
